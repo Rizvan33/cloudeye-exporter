@@ -1,10 +1,10 @@
 # cloudeye-exporter
 
-Prometheus cloudeye exporter for [Huaweicloud](https://www.huaweicloud.com/).
+Prometheus cloudeye exporter for [Flexible Engine Cloud](https://cloud.orange-business.com/en/offers/infrastructure-iaas/public-cloud/).
 
 ## Download
 ```
-$ git clone https://github.com/huaweicloud/cloudeye-exporter
+$ git clone https://github.com/FlexibleEngineCloud/cloudeye-exporter
 ```
 
 ## (Option) Building The Discovery with Exact steps on clean Ubuntu 16.04 
@@ -14,8 +14,8 @@ $ sudo tar -C /usr/local -xzf go1.12.5.linux-amd64.tar.gz
 $ export PATH=$PATH:/usr/local/go/bin # You should put in your .profile or .bashrc
 $ go version # to verify it runs and version #
 
-$ go get github.com/huaweicloud/cloudeye-exporter
-$ cd ~/go/src/github.com/huaweicloud/cloudeye-exporter
+$ go get github.com/FlexibleEngineCloud/cloudeye-exporter
+$ cd ~/go/src/github.com/FlexibleEngineCloud/cloudeye-exporter
 $ go build
 ```
 
@@ -40,30 +40,30 @@ Usage of ./cloudeye-exporter:
 ```
 
 ## Example of config file(clouds.yml)
-The "URL" value can be get from [Identity and Access Management (IAM) endpoint list](https://developer.huaweicloud.com/en-us/endpoint).
+The "URL" value can be get from [Identity and Access Management (IAM) endpoint list](https://docs.prod-cloud-ocb.orange-business.com/endpoint/index.html).
 ```
 global:
-  prefix: "huaweicloud"
+  prefix: "flexibleengine"
   port: ":8087"
   metric_path: "/metrics"
 
 auth:
-  auth_url: "https://iam.cn-north-1.myhwclouds.com/v3"
-  project_name: "cn-north-1"
-  access_key: "xdfsdfsdfsdfsdfsdf"
-  secret_key: "xsdfsddfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfdsfsd"
-  region: "cn-north-1"
+  auth_url: "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com"
+  project_name: "eu-west-0"
+  access_key: "<your-access-key>"
+  secret_key: "<your-secret-key>"
+  region: "eu-west-0"
 
 ```
 or
 
 ```
 auth:
-  auth_url: "https://iam.cn-north-1.myhwclouds.com/v3"
-  project_name: "cn-north-1"
+  auth_url: "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com"
+  project_name: "eu-west-0"
   user_name: "username"
   password: "password"
-  region: "cn-north-1"
+  region: "eu-west-0"
   domain_name: "domain_name"
 
 ```
@@ -78,7 +78,7 @@ global:
   scrape_interval: 1m # Set the scrape interval to every 1 minute seconds. Default is every 1 minute.
   scrape_timeout: 1m
 scrape_configs:
-  - job_name: 'huaweicloud'
+  - job_name: 'flexibleengine'
     static_configs:
     - targets: ['10.0.0.10:8087']
     params:
