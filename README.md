@@ -48,7 +48,7 @@ global:
   metric_path: "/metrics"
 
 auth:
-  auth_url: "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com"
+  auth_url: "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com/v3"
   project_name: "eu-west-0"
   access_key: "<your-access-key>"
   secret_key: "<your-secret-key>"
@@ -59,7 +59,7 @@ or
 
 ```
 auth:
-  auth_url: "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com"
+  auth_url: "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com/v3"
   project_name: "eu-west-0"
   user_name: "username"
   password: "password"
