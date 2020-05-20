@@ -1,10 +1,10 @@
 global:
-  prefix: "huaweicloud"
+  prefix: "flexibleengine"
 
 auth:
-  auth_url: "https://iam.cn-north-1.myhwclouds.com/v3"
-  project_name: "cn-north-1"
+  auth_url: "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com"
+  project_name: "eu-west-0"
   access_key: "xdfsdfsdfsdfsdfsdf"
   secret_key: "xsdfsddfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfdsfsd"
-  region: "cn-north-1"
+  region: "eu-west-0"
 
