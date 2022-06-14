@@ -1,10 +1,14 @@
 global:
   prefix: "flexibleengine"
+  port: ":8087"
+  metric_path: "/metrics"
+  retrieve_offset: "0"
+  cloudeye_timestamp: false
+  ignore_empty_datapoints: false
 
 auth:
-  auth_url: "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com"
-  project_name: "eu-west-0"
-  access_key: "xdfsdfsdfsdfsdfsdf"
-  secret_key: "xsdfsddfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfdsfsd"
+  auth_url: "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com/v3"
+  project_name: "eu-west-0_myproject"
+  access_key: "<your-access-key>"
+  secret_key: "<your-secret-key>"
   region: "eu-west-0"
-

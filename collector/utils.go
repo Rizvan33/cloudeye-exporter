@@ -1,22 +1,9 @@
-// Copyright 2019 HuaweiCloud.
-//
-// Licensed under the Apache License, Version 2.0 (the "License");
-// you may not use this file except in compliance with the License.
-// You may obtain a copy of the License at
-//
-// http://www.apache.org/licenses/LICENSE-2.0
-//
-// Unless required by applicable law or agreed to in writing, software
-// distributed under the License is distributed on an "AS IS" BASIS,
-// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-// See the License for the specific language governing permissions and
-// limitations under the License.
-
 package collector
 
 import (
-	"gopkg.in/yaml.v2"
 	"io/ioutil"
+
+	"gopkg.in/yaml.v2"
 )
 
 type CloudAuth struct {
@@ -32,12 +19,11 @@ type CloudAuth struct {
 }
 
 type Global struct {
-	Port                  string `yaml:"port"`
-	Prefix                string `yaml:"prefix"`
-	MetricPath            string `yaml:"metric_path"`
-	RetrieveOffset        string `yaml:"retrieve_offset"`
-	CloudeyeTimestamp     bool   `yaml:"cloudeye_timestamp"`
-	IgnoreEmptyDatapoints bool   `yaml:"ignore_empty_datapoints"`
+	Port            string `yaml:"port"`
+	Prefix          string `yaml:"prefix"`
+	MetricPath      string `yaml:"metric_path"`
+	MaxRoutines     int    `yaml:"max_routines"`
+	ScrapeBatchSize int    `yaml:"scrape_batch_size"`
 }
 
 type CloudConfig struct {
@@ -76,14 +62,38 @@ func SetDefaultConfigValues(config *CloudConfig) {
 		config.Global.Prefix = "huaweicloud"
 	}
 
-	if config.Global.RetrieveOffset == "" {
-		config.Global.RetrieveOffset = "0"
+	if config.Global.MaxRoutines == 0 {
+		config.Global.MaxRoutines = 20
+	}
+
+	if config.Global.ScrapeBatchSize == 0 {
+		config.Global.ScrapeBatchSize = 10
 	}
 }
 
-//
-//func getFieldString(e *Employee, field string) string {
-//	r := reflect.ValueOf(e)
-//	f := reflect.Indirect(r).FieldByName(field)
-//	return f.String()
-//}
+var filterConfigMap map[string]map[string][]string
+
+func InitFilterConfig(enable bool) error {
+	filterConfigMap = make(map[string]map[string][]string)
+	if !enable {
+		return nil
+	}
+
+	data, err := ioutil.ReadFile("metric_filter_config.yml")
+	if err != nil {
+		return err
+	}
+
+	err = yaml.Unmarshal(data, &filterConfigMap)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
+func getMetricConfigMap(namespace string) map[string][]string {
+	if configMap, ok := filterConfigMap[namespace]; ok {
+		return configMap
+	}
+	return nil
+}
