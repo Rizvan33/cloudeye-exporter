@@ -1,4 +1,5 @@
 global:
+<<<<<<< HEAD
   prefix: "flexibleengine"
   port: ":8087"
   metric_path: "/metrics"
@@ -12,3 +13,14 @@ auth:
   access_key: "<your-access-key>"
   secret_key: "<your-secret-key>"
   region: "eu-west-0"
+=======
+  prefix: "huaweicloud"
+  scrape_batch_size: 10
+
+auth:
+  auth_url: "https://iam.xxx.yyy.com/v3"
+  project_name: "{project_name}"
+  access_key: "{access_key}"
+  secret_key: "{secret_key}"
+  region: "{region}"
+>>>>>>> upstream/master
