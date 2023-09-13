@@ -13,8 +13,6 @@ Cloud Eye exporter for Prometheus support the following services :
 - NAT Gateway
 - Relational Database Service
 
-[中文](./README_cn.md)
-
 ## Download
 
 ```bash
@@ -44,10 +42,7 @@ Modify the "auth_url" value follwing your region (IAM API Endpoints list can be 
 global:
   prefix: "flexibleengine"
   port: ":8087"
-  metric_path: "/metrics"
-  retrieve_offset: "0"
-  cloudeye_timestamp: false
-  ignore_empty_datapoints: false
+	@@ -52,43 +49,85 @@ global:
 
 auth:
   auth_url: "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com/v3"
@@ -96,43 +91,15 @@ Usage of ./cloudeye-exporter:
  
 ```
 
-<<<<<<< HEAD
 ## Prometheus Configuration
 
 You need to edit Prometheus Configuration file 
-=======
-## Example of config file(clouds.yml)
-The "URL" value can be get from [Identity and Access Management (IAM) endpoint list](https://developer.huaweicloud.com/en-us/endpoint).
-```
-global:
-  prefix: "huaweicloud"
-  port: ":8087"
-  metric_path: "/metrics"
-  scrape_batch_size: 10
-auth:
-  auth_url: "https://iam.xxx.yyy.com/v3"
-  project_name: "{project_name}"
-  access_key: "{access_key}"
-  secret_key: "{secret_key}"
-  region: "{region}"
->>>>>>> upstream/master
 
 ```bash
 vim /etc/prometheus/prometheus.yml
 ```
 
-<<<<<<< HEAD
 Create a new job `FlexibleEngine`
-=======
-```
-auth:
-  auth_url: "https://iam.xxx.yyy.com/v3"
-  project_name: "{project_name}"
-  user_name: "{username}"
-  password: "{password}"
-  region: "{region}"
-  domain_name: "{domain_name}"
->>>>>>> upstream/master
 
 Pass the The Cloud Eye Exporter address as `targets`
 
