@@ -42,7 +42,6 @@ Modify the "auth_url" value follwing your region (IAM API Endpoints list can be 
 global:
   prefix: "flexibleengine"
   port: ":8087"
-	@@ -52,43 +49,85 @@ global:
 
 auth:
   auth_url: "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com/v3"
