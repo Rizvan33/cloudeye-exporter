@@ -9,7 +9,7 @@
       "pluginName": "prometheus"
     }
   ],
-  "description": "【华为云DCASS支持的监控指标】https://support.flexibleengine.com/usermanual-dc/dc_04_0802.html",
+  "description": "【DCAAS Supported Metrics】https://docs.prod-cloud-ocb.orange-business.com/usermanual/dc/dc_04_0802.html",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "gnetId": 8919,

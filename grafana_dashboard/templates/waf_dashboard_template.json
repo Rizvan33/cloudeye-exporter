@@ -9,7 +9,7 @@
       "pluginName": "prometheus"
     }
   ],
-  "description": "【华为云WAF监控指标说明】https://support.flexibleengine.com/usermanual-waf/waf_01_0372.html",
+  "description": "【WAF Supported Metrics】https://docs.prod-cloud-ocb.orange-business.com/usermanual/waf/waf_01_0092.html",
   "editable": true,
   "gnetId": 8919,
   "graphTooltip": 0,

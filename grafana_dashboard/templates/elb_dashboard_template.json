@@ -9,7 +9,7 @@
       "pluginName": "prometheus"
     }
   ],
-  "description": "【华为云ELB监控指标说明】https://support.flexibleengine.com/usermanual-elb/elb_ug_jk_0001.html",
+  "description": "【ELB Supported Metrics】https://docs.prod-cloud-ocb.orange-business.com/usermanual/elb/elb_ug_jk_0001.html",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "gnetId": 8919,

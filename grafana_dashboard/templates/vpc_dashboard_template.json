@@ -9,7 +9,7 @@
       "pluginName": "prometheus"
     }
   ],
-  "description": "【华为云VPC监控指标说明】https://support.flexibleengine.com/intl/zh-cn/usermanual-vpc/vpc010012.html",
+  "description": "【VPC Supported Metrics】https://docs.prod-cloud-ocb.orange-business.com/usermanual/vpc/vpc010012.html",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "gnetId": 8919,

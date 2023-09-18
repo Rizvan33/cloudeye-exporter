@@ -9,7 +9,7 @@
       "pluginName": "prometheus"
     }
   ],
-  "description": "【华为云ECS支持的监控指标】https://support.flexibleengine.com/usermanual-ecs/ecs_03_1002.html",
+  "description": "【ECS Supported Metrics】https://docs.prod-cloud-ocb.orange-business.com/usermanual/ecs/en-us_topic_0030911465.html",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "gnetId": 8919,

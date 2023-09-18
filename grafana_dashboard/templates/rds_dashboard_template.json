@@ -9,7 +9,7 @@
       "pluginName": "prometheus"
     }
   ],
-  "description": "【华为云RDS监控指标说明】https://support.flexibleengine.com/usermanual-rds/rds_06_0001.html",
+  "description": "【RDS Supported Metrics】https://docs.prod-cloud-ocb.orange-business.com/api/rds/rds_10_0204.html",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "gnetId": 8919,

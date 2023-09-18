@@ -9,7 +9,7 @@
       "pluginName": "prometheus"
     }
   ],
-  "description": "【Supported Metrics by Flexible Engine】https://docs.prod-cloud-ocb.orange-business.com/usermanual/css/css_01_0042.html",
+  "description": "【CSS Supported Metrics】https://docs.prod-cloud-ocb.orange-business.com/usermanual/css/css_01_0042.html",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "gnetId": 8919,
