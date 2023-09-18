@@ -9,7 +9,7 @@
       "pluginName": "prometheus"
     }
   ],
-  "description": "【华为云ELB监控指标说明】https://support.huaweicloud.com/usermanual-elb/elb_ug_jk_0001.html",
+  "description": "【华为云ELB监控指标说明】https://support.flexibleengine.com/usermanual-elb/elb_ug_jk_0001.html",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "gnetId": 8919,
@@ -318,7 +318,7 @@
       "targets": [
         {
           "exemplar": false,
-          "expr": "huaweicloud_sys_elb_m1_cps{epId=~\"$EPS\"} -0",
+          "expr": "flexibleengine_sys_elb_m1_cps{epId=~\"$EPS\"} -0",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -329,7 +329,7 @@
         },
         {
           "exemplar": false,
-          "expr": "huaweicloud_sys_elb_m2_act_conn{epId=~\"$EPS\"} - 0",
+          "expr": "flexibleengine_sys_elb_m2_act_conn{epId=~\"$EPS\"} - 0",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -339,7 +339,7 @@
         },
         {
           "exemplar": false,
-          "expr": "huaweicloud_sys_elb_m3_inact_conn{epId=~\"$EPS\"} - 0",
+          "expr": "flexibleengine_sys_elb_m3_inact_conn{epId=~\"$EPS\"} - 0",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -349,7 +349,7 @@
         },
         {
           "exemplar": false,
-          "expr": "huaweicloud_sys_elb_m4_ncps{epId=~\"$EPS\"} - 0",
+          "expr": "flexibleengine_sys_elb_m4_ncps{epId=~\"$EPS\"} - 0",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -359,7 +359,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_elb_m7_in_Bps{epId=~\"$EPS\"}) by (listener_name)",
+          "expr": "avg(flexibleengine_sys_elb_m7_in_Bps{epId=~\"$EPS\"}) by (listener_name)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -369,7 +369,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_elb_m8_out_Bps{epId=~\"$EPS\"}) by (listener_name)",
+          "expr": "avg(flexibleengine_sys_elb_m8_out_Bps{epId=~\"$EPS\"}) by (listener_name)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -379,7 +379,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_elb_m15_l7_upstream_4xx{epId=~\"$EPS\"}) by (listener_name)",
+          "expr": "avg(flexibleengine_sys_elb_m15_l7_upstream_4xx{epId=~\"$EPS\"}) by (listener_name)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -389,7 +389,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_elb_m16_l7_upstream_5xx{epId=~\"$EPS\"}) by (listener_name)",
+          "expr": "avg(flexibleengine_sys_elb_m16_l7_upstream_5xx{epId=~\"$EPS\"}) by (listener_name)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -490,7 +490,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_m2_act_conn{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
+          "expr": "flexibleengine_sys_elb_m2_act_conn{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -609,7 +609,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_m3_inact_conn{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
+          "expr": "flexibleengine_sys_elb_m3_inact_conn{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -723,7 +723,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_m1_cps{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
+          "expr": "flexibleengine_sys_elb_m1_cps{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -837,7 +837,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_l4_con_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_elb_l4_con_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -849,7 +849,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_l7_con_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_elb_l7_con_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{vip_address}}_{{name}}_L7并发连接数",
@@ -962,7 +962,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_m4_ncps{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
+          "expr": "flexibleengine_sys_elb_m4_ncps{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1077,7 +1077,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_l4_ncps_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_elb_l4_ncps_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1089,7 +1089,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_l7_ncps_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_elb_l7_ncps_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1202,7 +1202,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_m7_in_Bps{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
+          "expr": "flexibleengine_sys_elb_m7_in_Bps{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -1215,7 +1215,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_elb_m8_out_Bps{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
+          "expr": "0 - flexibleengine_sys_elb_m8_out_Bps{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1321,7 +1321,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_l4_in_bps_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_elb_l4_in_bps_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -1331,7 +1331,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_elb_l4_out_bps_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "0 - flexibleengine_sys_elb_l4_out_bps_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1342,7 +1342,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_l7_in_bps_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_elb_l7_in_bps_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1353,7 +1353,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_elb_l7_out_bps_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "0 - flexibleengine_sys_elb_l7_out_bps_usage{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1459,7 +1459,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_ma_normal_servers{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_elb_ma_normal_servers{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "hide": false,
           "interval": "",
@@ -1574,7 +1574,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_m9_abnormal_servers{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_elb_m9_abnormal_servers{vip_address=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1677,7 +1677,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_m15_l7_upstream_4xx{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
+          "expr": "flexibleengine_sys_elb_m15_l7_upstream_4xx{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -1781,7 +1781,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_elb_m16_l7_upstream_5xx{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
+          "expr": "flexibleengine_sys_elb_m16_l7_upstream_5xx{vip_address=~\"$hostIP\",name=~\"$hostname\",listener_name=~\"$listener\"}",
           "format": "time_series",
           "hide": false,
           "interval": "",
@@ -1842,7 +1842,7 @@
           "value": "0d6fdb17-8e8d-411c-a072-cca611ee664b"
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "huaweicloud_epinfo",
+        "definition": "flexibleengine_epinfo",
         "hide": 0,
         "includeAll": false,
         "label": "企业项目",
@@ -1850,7 +1850,7 @@
         "name": "EPS",
         "options": [],
         "query": {
-          "query": "huaweicloud_epinfo",
+          "query": "flexibleengine_epinfo",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -1870,7 +1870,7 @@
           ]
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "label_values(huaweicloud_sys_elb_m2_act_conn{epId=~\"$EPS\"},vip_address)",
+        "definition": "label_values(flexibleengine_sys_elb_m2_act_conn{epId=~\"$EPS\"},vip_address)",
         "hide": 0,
         "includeAll": true,
         "label": "ELB-IP",
@@ -1878,7 +1878,7 @@
         "name": "hostIP",
         "options": [],
         "query": {
-          "query": "label_values(huaweicloud_sys_elb_m2_act_conn{epId=~\"$EPS\"},vip_address)",
+          "query": "label_values(flexibleengine_sys_elb_m2_act_conn{epId=~\"$EPS\"},vip_address)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -1898,7 +1898,7 @@
           ]
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "label_values(huaweicloud_sys_elb_m2_act_conn{epId=~\"$EPS\",vip_address=~\"$hostIP\"},name)",
+        "definition": "label_values(flexibleengine_sys_elb_m2_act_conn{epId=~\"$EPS\",vip_address=~\"$hostIP\"},name)",
         "hide": 0,
         "includeAll": true,
         "label": "实例名",
@@ -1906,7 +1906,7 @@
         "name": "hostname",
         "options": [],
         "query": {
-          "query": "label_values(huaweicloud_sys_elb_m2_act_conn{epId=~\"$EPS\",vip_address=~\"$hostIP\"},name)",
+          "query": "label_values(flexibleengine_sys_elb_m2_act_conn{epId=~\"$EPS\",vip_address=~\"$hostIP\"},name)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -1922,7 +1922,7 @@
           "value": "108"
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "query_result(count(huaweicloud_agt_ecs_net_tcp_established{epId=~\"$EPS\"}))",
+        "definition": "query_result(count(flexibleengine_agt_ecs_net_tcp_established{epId=~\"$EPS\"}))",
         "hide": 2,
         "includeAll": false,
         "label": "",
@@ -1930,7 +1930,7 @@
         "name": "total",
         "options": [],
         "query": {
-          "query": "query_result(count(huaweicloud_agt_ecs_net_tcp_established{epId=~\"$EPS\"}))",
+          "query": "query_result(count(flexibleengine_agt_ecs_net_tcp_established{epId=~\"$EPS\"}))",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -1950,7 +1950,7 @@
           ]
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "label_values(huaweicloud_sys_elb_m2_act_conn{name=~\"$hostname\", vip_address=~\"$hostIP\"},listener_name)",
+        "definition": "label_values(flexibleengine_sys_elb_m2_act_conn{name=~\"$hostname\", vip_address=~\"$hostIP\"},listener_name)",
         "hide": 0,
         "includeAll": true,
         "label": "监听器",
@@ -1958,7 +1958,7 @@
         "name": "listener",
         "options": [],
         "query": {
-          "query": "label_values(huaweicloud_sys_elb_m2_act_conn{name=~\"$hostname\", vip_address=~\"$hostIP\"},listener_name)",
+          "query": "label_values(flexibleengine_sys_elb_m2_act_conn{name=~\"$hostname\", vip_address=~\"$hostIP\"},listener_name)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,

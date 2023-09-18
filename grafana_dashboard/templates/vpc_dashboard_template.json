@@ -9,7 +9,7 @@
       "pluginName": "prometheus"
     }
   ],
-  "description": "【华为云VPC监控指标说明】https://support.huaweicloud.com/intl/zh-cn/usermanual-vpc/vpc010012.html",
+  "description": "【华为云VPC监控指标说明】https://support.flexibleengine.com/intl/zh-cn/usermanual-vpc/vpc010012.html",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "gnetId": 8919,
@@ -265,7 +265,7 @@
         {
           "editorMode": "code",
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_vpc_downstream_bandwidth{epId=~\"$EPS\",publicIpAddress=~\"\"}) by (name,bandwidth_id)",
+          "expr": "avg(flexibleengine_sys_vpc_downstream_bandwidth{epId=~\"$EPS\",publicIpAddress=~\"\"}) by (name,bandwidth_id)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -277,7 +277,7 @@
         {
           "editorMode": "code",
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_vpc_downstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress=~\"\"}) by (name,bandwidth_id)",
+          "expr": "avg(flexibleengine_sys_vpc_downstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress=~\"\"}) by (name,bandwidth_id)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -288,7 +288,7 @@
         {
           "editorMode": "code",
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_vpc_down_stream{epId=~\"$EPS\",publicIpAddress=~\"\"}) by (name,bandwidth_id)",
+          "expr": "avg(flexibleengine_sys_vpc_down_stream{epId=~\"$EPS\",publicIpAddress=~\"\"}) by (name,bandwidth_id)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -299,7 +299,7 @@
         {
           "editorMode": "code",
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_vpc_upstream_bandwidth{epId=~\"$EPS\",publicIpAddress=~\"\"}) by (name,bandwidth_id)",
+          "expr": "avg(flexibleengine_sys_vpc_upstream_bandwidth{epId=~\"$EPS\",publicIpAddress=~\"\"}) by (name,bandwidth_id)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -310,7 +310,7 @@
         {
           "editorMode": "code",
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_vpc_upstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress=~\"\"}) by (name,bandwidth_id)",
+          "expr": "avg(flexibleengine_sys_vpc_upstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress=~\"\"}) by (name,bandwidth_id)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -321,7 +321,7 @@
         {
           "editorMode": "code",
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_vpc_up_stream{epId=~\"$EPS\",publicIpAddress=~\"\"}) by (name,bandwidth_id)",
+          "expr": "avg(flexibleengine_sys_vpc_up_stream{epId=~\"$EPS\",publicIpAddress=~\"\"}) by (name,bandwidth_id)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -423,7 +423,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "huaweicloud_sys_vpc_downstream_bandwidth{epId=~\"$EPS\",publicIpAddress=~\"\"}",
+          "expr": "flexibleengine_sys_vpc_downstream_bandwidth{epId=~\"$EPS\",publicIpAddress=~\"\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -544,7 +544,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "huaweicloud_sys_vpc_downstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress=~\"\"}",
+          "expr": "flexibleengine_sys_vpc_downstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress=~\"\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -665,7 +665,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "huaweicloud_sys_vpc_down_stream{epId=~\"$EPS\",publicIpAddress=~\"\"}",
+          "expr": "flexibleengine_sys_vpc_down_stream{epId=~\"$EPS\",publicIpAddress=~\"\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -786,7 +786,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "huaweicloud_sys_vpc_upstream_bandwidth{epId=~\"$EPS\",publicIpAddress=~\"\"}",
+          "expr": "flexibleengine_sys_vpc_upstream_bandwidth{epId=~\"$EPS\",publicIpAddress=~\"\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -907,7 +907,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "huaweicloud_sys_vpc_upstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress=~\"\"}",
+          "expr": "flexibleengine_sys_vpc_upstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress=~\"\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1028,7 +1028,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "huaweicloud_sys_vpc_up_stream{epId=~\"$EPS\",publicIpAddress=~\"\"}",
+          "expr": "flexibleengine_sys_vpc_up_stream{epId=~\"$EPS\",publicIpAddress=~\"\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1296,7 +1296,7 @@
         {
           "editorMode": "code",
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_vpc_downstream_bandwidth{epId=~\"$EPS\",publicIpAddress!=\"\"}) by (name,publicip_id)",
+          "expr": "avg(flexibleengine_sys_vpc_downstream_bandwidth{epId=~\"$EPS\",publicIpAddress!=\"\"}) by (name,publicip_id)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -1308,7 +1308,7 @@
         {
           "editorMode": "code",
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_vpc_downstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress!=\"\"}) by (name,publicip_id)",
+          "expr": "avg(flexibleengine_sys_vpc_downstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress!=\"\"}) by (name,publicip_id)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -1319,7 +1319,7 @@
         {
           "editorMode": "code",
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_vpc_down_stream{epId=~\"$EPS\",publicIpAddress!=\"\"}) by (name,publicip_id)",
+          "expr": "avg(flexibleengine_sys_vpc_down_stream{epId=~\"$EPS\",publicIpAddress!=\"\"}) by (name,publicip_id)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -1330,7 +1330,7 @@
         {
           "editorMode": "code",
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_vpc_upstream_bandwidth{epId=~\"$EPS\",publicIpAddress!=\"\"}) by (name,publicip_id)",
+          "expr": "avg(flexibleengine_sys_vpc_upstream_bandwidth{epId=~\"$EPS\",publicIpAddress!=\"\"}) by (name,publicip_id)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -1341,7 +1341,7 @@
         {
           "editorMode": "code",
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_vpc_upstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress!=\"\"}) by (name,publicip_id)",
+          "expr": "avg(flexibleengine_sys_vpc_upstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress!=\"\"}) by (name,publicip_id)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -1352,7 +1352,7 @@
         {
           "editorMode": "code",
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_vpc_up_stream{epId=~\"$EPS\",publicIpAddress!=\"\"}) by (name,publicip_id)",
+          "expr": "avg(flexibleengine_sys_vpc_up_stream{epId=~\"$EPS\",publicIpAddress!=\"\"}) by (name,publicip_id)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -1455,7 +1455,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "huaweicloud_sys_vpc_downstream_bandwidth{epId=~\"$EPS\",publicIpAddress!=\"\"}",
+          "expr": "flexibleengine_sys_vpc_downstream_bandwidth{epId=~\"$EPS\",publicIpAddress!=\"\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1576,7 +1576,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "huaweicloud_sys_vpc_downstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress!=\"\"}",
+          "expr": "flexibleengine_sys_vpc_downstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress!=\"\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1697,7 +1697,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "huaweicloud_sys_vpc_down_stream{epId=~\"$EPS\",publicIpAddress!=\"\"}",
+          "expr": "flexibleengine_sys_vpc_down_stream{epId=~\"$EPS\",publicIpAddress!=\"\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1818,7 +1818,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "huaweicloud_sys_vpc_upstream_bandwidth{epId=~\"$EPS\",publicIpAddress!=\"\"}",
+          "expr": "flexibleengine_sys_vpc_upstream_bandwidth{epId=~\"$EPS\",publicIpAddress!=\"\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1939,7 +1939,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "huaweicloud_sys_vpc_upstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress!=\"\"}",
+          "expr": "flexibleengine_sys_vpc_upstream_bandwidth_usage{epId=~\"$EPS\",publicIpAddress!=\"\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -2060,7 +2060,7 @@
         {
           "editorMode": "code",
           "exemplar": true,
-          "expr": "huaweicloud_sys_vpc_up_stream{epId=~\"$EPS\",publicIpAddress!=\"\"}",
+          "expr": "flexibleengine_sys_vpc_up_stream{epId=~\"$EPS\",publicIpAddress!=\"\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -2120,7 +2120,7 @@
           "value": "0"
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "huaweicloud_epinfo",
+        "definition": "flexibleengine_epinfo",
         "hide": 0,
         "includeAll": false,
         "label": "企业项目",
@@ -2128,7 +2128,7 @@
         "name": "EPS",
         "options": [],
         "query": {
-          "query": "huaweicloud_epinfo",
+          "query": "flexibleengine_epinfo",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,

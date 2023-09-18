@@ -9,7 +9,7 @@
       "pluginName": "prometheus"
     }
   ],
-  "description": "【华为云DCASS支持的监控指标】https://support.huaweicloud.com/usermanual-dc/dc_04_0802.html",
+  "description": "【华为云DCASS支持的监控指标】https://support.flexibleengine.com/usermanual-dc/dc_04_0802.html",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "gnetId": 8919,
@@ -293,7 +293,7 @@
       "targets": [
         {
           "exemplar": false,
-          "expr": "huaweicloud_sys_dcaas_network_incoming_bits_rate{} - 0",
+          "expr": "flexibleengine_sys_dcaas_network_incoming_bits_rate{} - 0",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -303,7 +303,7 @@
         },
         {
           "exemplar": false,
-          "expr": "huaweicloud_sys_dcaas_network_outgoing_bits_rate{} - 0",
+          "expr": "flexibleengine_sys_dcaas_network_outgoing_bits_rate{} - 0",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -313,7 +313,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_dcaas_network_incoming_bytes{}) by (name) - 0",
+          "expr": "avg(flexibleengine_sys_dcaas_network_incoming_bytes{}) by (name) - 0",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -323,7 +323,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_dcaas_network_outgoing_bytes{}) by (name) - 0",
+          "expr": "avg(flexibleengine_sys_dcaas_network_outgoing_bytes{}) by (name) - 0",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -333,7 +333,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_dcaas_network_incoming_packets_rate{}) by (name) - 0",
+          "expr": "avg(flexibleengine_sys_dcaas_network_incoming_packets_rate{}) by (name) - 0",
           "format": "table",
           "instant": true,
           "interval": "",
@@ -342,7 +342,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_dcaas_network_outgoing_packets_rate{}) by (name) - 0",
+          "expr": "avg(flexibleengine_sys_dcaas_network_outgoing_packets_rate{}) by (name) - 0",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -352,7 +352,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_dcaas_latency{}) by (name) - 0",
+          "expr": "avg(flexibleengine_sys_dcaas_latency{}) by (name) - 0",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -362,7 +362,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_dcaas_packet_loss_rate{}) by (name) -0",
+          "expr": "avg(flexibleengine_sys_dcaas_packet_loss_rate{}) by (name) -0",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -469,7 +469,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_dcaas_latency{device_id=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_dcaas_latency{device_id=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -593,7 +593,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_dcaas_packet_loss_rate{device_id=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_dcaas_packet_loss_rate{device_id=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -715,7 +715,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_dcaas_network_incoming_bits_rate{device_id=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_dcaas_network_incoming_bits_rate{device_id=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -728,7 +728,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_dcaas_network_outgoing_bits_rate{device_id=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "0 - flexibleengine_sys_dcaas_network_outgoing_bits_rate{device_id=~\"$hostIP\",name=~\"$hostname\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{device_id}}({{name}})-网络流出带宽",
@@ -842,7 +842,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_dcaas_network_incoming_bytes{device_id=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_dcaas_network_incoming_bytes{device_id=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -855,7 +855,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_dcaas_network_outgoing_bytes{device_id=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "0 - flexibleengine_sys_dcaas_network_outgoing_bytes{device_id=~\"$hostIP\",name=~\"$hostname\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{device_id}}({{name}})-网络流出流量",
@@ -969,7 +969,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_dcaas_network_incoming_packets_rate{device_id=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_dcaas_network_incoming_packets_rate{device_id=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -982,7 +982,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_dcaas_network_outgoing_packets_rate{device_id=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "0 - flexibleengine_sys_dcaas_network_outgoing_packets_rate{device_id=~\"$hostIP\",name=~\"$hostname\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{device_id}}({{name}})-网络流出包速率",
@@ -1096,7 +1096,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_dcaas_network_incoming_packets{device_id=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "flexibleengine_sys_dcaas_network_incoming_packets{device_id=~\"$hostIP\",name=~\"$hostname\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -1109,7 +1109,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_dcaas_network_outgoing_packets{device_id=~\"$hostIP\",name=~\"$hostname\"}",
+          "expr": "0 - flexibleengine_sys_dcaas_network_outgoing_packets{device_id=~\"$hostIP\",name=~\"$hostname\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{device_id}}({{name}})-网络流出包量",
@@ -1170,7 +1170,7 @@
           ]
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "huaweicloud_epinfo",
+        "definition": "flexibleengine_epinfo",
         "hide": 0,
         "includeAll": true,
         "label": "企业项目",
@@ -1178,7 +1178,7 @@
         "name": "EPS",
         "options": [],
         "query": {
-          "query": "huaweicloud_epinfo",
+          "query": "flexibleengine_epinfo",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -1198,7 +1198,7 @@
           ]
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "label_values(huaweicloud_sys_dcaas_network_incoming_bytes{epId=~\"$EPS\"},device_id)",
+        "definition": "label_values(flexibleengine_sys_dcaas_network_incoming_bytes{epId=~\"$EPS\"},device_id)",
         "hide": 0,
         "includeAll": true,
         "label": "专线IP",
@@ -1206,7 +1206,7 @@
         "name": "hostIP",
         "options": [],
         "query": {
-          "query": "label_values(huaweicloud_sys_dcaas_network_incoming_bytes{epId=~\"$EPS\"},device_id)",
+          "query": "label_values(flexibleengine_sys_dcaas_network_incoming_bytes{epId=~\"$EPS\"},device_id)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -1222,7 +1222,7 @@
           "value": "$__all"
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "label_values(huaweicloud_sys_dcaas_network_incoming_bytes{epId=~\"$EPS\",device_id=~\"$hostIP\"},name)",
+        "definition": "label_values(flexibleengine_sys_dcaas_network_incoming_bytes{epId=~\"$EPS\",device_id=~\"$hostIP\"},name)",
         "hide": 0,
         "includeAll": true,
         "label": "专线名称",
@@ -1230,7 +1230,7 @@
         "name": "hostname",
         "options": [],
         "query": {
-          "query": "label_values(huaweicloud_sys_dcaas_network_incoming_bytes{epId=~\"$EPS\",device_id=~\"$hostIP\"},name)",
+          "query": "label_values(flexibleengine_sys_dcaas_network_incoming_bytes{epId=~\"$EPS\",device_id=~\"$hostIP\"},name)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,

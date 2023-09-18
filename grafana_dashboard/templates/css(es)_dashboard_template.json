@@ -259,7 +259,7 @@
       "targets": [
         {
           "exemplar": false,
-          "expr": "huaweicloud_sys_es_status{epId=~'$EPS'}",
+          "expr": "flexibleengine_sys_es_status{epId=~'$EPS'}",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -269,7 +269,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_es_avg_cpu_usage{epId=~'$EPS'}) by (name)",
+          "expr": "avg(flexibleengine_sys_es_avg_cpu_usage{epId=~'$EPS'}) by (name)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -279,7 +279,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_es_avg_mem_used_percent{epId=~'$EPS'}) by (name)",
+          "expr": "avg(flexibleengine_sys_es_avg_mem_used_percent{epId=~'$EPS'}) by (name)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -289,7 +289,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_es_disk_util{epId=~'$EPS'}) by (name)",
+          "expr": "avg(flexibleengine_sys_es_disk_util{epId=~'$EPS'}) by (name)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -299,7 +299,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_es_max_jvm_heap_usage{epId=~'$EPS'}) by (name)",
+          "expr": "avg(flexibleengine_sys_es_max_jvm_heap_usage{epId=~'$EPS'}) by (name)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -309,7 +309,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_es_indices_count{epId=~'$EPS'}) by (name)",
+          "expr": "avg(flexibleengine_sys_es_indices_count{epId=~'$EPS'}) by (name)",
           "format": "table",
           "hide": false,
           "instant": true,
@@ -319,7 +319,7 @@
         },
         {
           "exemplar": false,
-          "expr": "avg(huaweicloud_sys_es_avg_load_average{epId=~'$EPS'}) by (name)",
+          "expr": "avg(flexibleengine_sys_es_avg_load_average{epId=~'$EPS'}) by (name)",
           "format": "table",
           "instant": true,
           "interval": "",
@@ -395,7 +395,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_status{epId=~\"$EPS\",name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_status{epId=~\"$EPS\",name=~\"$Cluster\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -501,7 +501,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_max_cpu_usage{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_max_cpu_usage{epId=~'$EPS',name=~\"$Cluster\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -511,7 +511,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_agt_ecs_SlAsHdata_disk_usedPercent{hostname=~\"$hostname\"}",
+          "expr": "flexibleengine_agt_ecs_SlAsHdata_disk_usedPercent{hostname=~\"$hostname\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{hostIP}}({{hostname}})-磁盘使用率（/data）",
@@ -519,7 +519,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_agt_ecs_SlAsHdata_disk_usedPercent{hostname=~\"$hostname\"}",
+          "expr": "flexibleengine_agt_ecs_SlAsHdata_disk_usedPercent{hostname=~\"$hostname\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{hostIP}}({{hostname}})-磁盘使用率（/data1）",
@@ -527,7 +527,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_agt_ecs_SlAsHdata1_disk_usedPercent{hostname=~\"$hostname\"}",
+          "expr": "flexibleengine_agt_ecs_SlAsHdata1_disk_usedPercent{hostname=~\"$hostname\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{hostIP}}({{hostname}})-磁盘使用率（/data2）",
@@ -535,7 +535,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_agt_ecs_SlAsHdata2_disk_usedPercent{hostname=~\"$hostname\"}",
+          "expr": "flexibleengine_agt_ecs_SlAsHdata2_disk_usedPercent{hostname=~\"$hostname\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{hostIP}}({{hostname}})-磁盘使用率（/data3）",
@@ -543,7 +543,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_agt_ecs_SlAsHdata3_disk_usedPercent{hostname=~\"$hostname\"}",
+          "expr": "flexibleengine_agt_ecs_SlAsHdata3_disk_usedPercent{hostname=~\"$hostname\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{hostIP}}({{hostname}})-磁盘使用率（/data4）",
@@ -655,7 +655,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_avg_mem_used_percent{epId=~\"$EPS\",name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_avg_mem_used_percent{epId=~\"$EPS\",name=~\"$Cluster\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -762,7 +762,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_disk_util{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_disk_util{epId=~'$EPS',name=~\"$Cluster\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -876,7 +876,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_nodes_count{epId=~\"$EPS\",name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_nodes_count{epId=~\"$EPS\",name=~\"$Cluster\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -889,7 +889,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_data_nodes_count{epId=~\"$EPS\",name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_data_nodes_count{epId=~\"$EPS\",name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_数据节点数量",
@@ -897,7 +897,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_master_nodes_count{epId=~\"$EPS\",name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_master_nodes_count{epId=~\"$EPS\",name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_Master节点数量",
@@ -905,7 +905,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_ingest_nodes_count{epId=~\"$EPS\",name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_ingest_nodes_count{epId=~\"$EPS\",name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_Client节点数量",
@@ -1013,7 +1013,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_total_shards_count{epId=~\"$EPS\",name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_total_shards_count{epId=~\"$EPS\",name=~\"$Cluster\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -1125,7 +1125,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_indices_count{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_indices_count{epId=~'$EPS',name=~\"$Cluster\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -1243,7 +1243,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_docs_count{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_docs_count{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_集群文档数量",
@@ -1251,7 +1251,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_es_docs_deleted_count{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "0 - flexibleengine_sys_es_docs_deleted_count{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_集群删除文档数量",
@@ -1362,7 +1362,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_SearchRate{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_SearchRate{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_平均查询速率",
@@ -1370,7 +1370,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_IndexingRate{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_IndexingRate{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_平均索引速率",
@@ -1483,7 +1483,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_SearchLatency{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_SearchLatency{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_平均查询时延",
@@ -1491,7 +1491,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_IndexingLatency{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_IndexingLatency{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_平均索引时延",
@@ -1604,7 +1604,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_avg_thread_pool_search_queue{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_avg_thread_pool_search_queue{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_集群Search队列平均数量",
@@ -1612,7 +1612,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_max_thread_pool_search_queue{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_max_thread_pool_search_queue{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_集群Search队列最大数量",
@@ -1620,7 +1620,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_sum_thread_pool_search_queue{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_sum_thread_pool_search_queue{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_集群Search队列总计数量",
@@ -1733,7 +1733,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_avg_thread_pool_write_queue{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_avg_thread_pool_write_queue{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_集群Write队列平均数量",
@@ -1741,7 +1741,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_max_thread_pool_write_queue{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_max_thread_pool_write_queue{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_集群Write队列最大数量",
@@ -1749,7 +1749,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_sum_thread_pool_write_queue{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_sum_thread_pool_write_queue{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_集群Write队列总计数量",
@@ -1861,7 +1861,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_avg_jvm_young_gc_count{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_avg_jvm_young_gc_count{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_平均JVM YOUNG GC次数",
@@ -1869,7 +1869,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_max_jvm_young_gc_count{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_max_jvm_young_gc_count{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_最大JVM YOUNG GC次数",
@@ -1877,7 +1877,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_sum_jvm_young_gc_count{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_sum_jvm_young_gc_count{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_总计JVM YOUNG GC次数",
@@ -1990,7 +1990,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_avg_jvm_young_gc_time{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_avg_jvm_young_gc_time{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_平均JVM YOUNG GC耗时",
@@ -1998,7 +1998,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_max_jvm_young_gc_time{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_max_jvm_young_gc_time{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_最大JVM YOUNG GC耗时",
@@ -2006,7 +2006,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_sum_jvm_young_gc_time{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_sum_jvm_young_gc_time{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_总计JVM YOUNG GC耗时",
@@ -2119,7 +2119,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_avg_jvm_old_gc_count{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_avg_jvm_old_gc_count{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_平均JVM OLD GC次数",
@@ -2127,7 +2127,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_max_jvm_old_gc_count{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_max_jvm_old_gc_count{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_最大JVM OLD GC次数",
@@ -2135,7 +2135,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_sum_jvm_old_gc_count{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_sum_jvm_old_gc_count{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_总计JVM OLD GC次数",
@@ -2248,7 +2248,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_avg_jvm_old_gc_time{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_avg_jvm_old_gc_time{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_平均JVM OLD GC耗时",
@@ -2256,7 +2256,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_max_jvm_old_gc_time{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_max_jvm_old_gc_time{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_最大JVM OLD GC耗时",
@@ -2264,7 +2264,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_sum_jvm_old_gc_time{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_sum_jvm_old_gc_time{epId=~'$EPS',name=~\"$Cluster\"}",
           "hide": false,
           "interval": "",
           "legendFormat": "{{name}}_总计JVM OLD GC耗时",
@@ -2568,7 +2568,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_max_jvm_heap_usage{epId=~'$EPS',name=~\"$Cluster\"}",
+          "expr": "flexibleengine_sys_es_max_jvm_heap_usage{epId=~'$EPS',name=~\"$Cluster\"}",
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
@@ -2667,7 +2667,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "avg(huaweicloud_sys_es_cpu_usage{epId=~'$EPS',name=~\"$Cluster\",privateIp=~'$privateIp'}) by (privateIp,instanceName)",
+          "expr": "avg(flexibleengine_sys_es_cpu_usage{epId=~'$EPS',name=~\"$Cluster\",privateIp=~'$privateIp'}) by (privateIp,instanceName)",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -2780,7 +2780,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_thread_pool_search_queue{name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
+          "expr": "flexibleengine_sys_es_thread_pool_search_queue{name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -2793,7 +2793,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_es_thread_pool_search_rejected{name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
+          "expr": "0 - flexibleengine_sys_es_thread_pool_search_rejected{name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -2906,7 +2906,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_thread_pool_write_queue{name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
+          "expr": "flexibleengine_sys_es_thread_pool_write_queue{name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -2919,7 +2919,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_es_thread_pool_write_rejected{name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
+          "expr": "0 - flexibleengine_sys_es_thread_pool_write_rejected{name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -3031,7 +3031,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_jvm_young_gc_count{epId=~\"$EPS\",name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
+          "expr": "flexibleengine_sys_es_jvm_young_gc_count{epId=~\"$EPS\",name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -3044,7 +3044,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_jvm_old_gc_count{epId=~\"$EPS\",name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
+          "expr": "flexibleengine_sys_es_jvm_old_gc_count{epId=~\"$EPS\",name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -3158,7 +3158,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_jvm_young_gc_time{epId=~\"$EPS\",name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
+          "expr": "flexibleengine_sys_es_jvm_young_gc_time{epId=~\"$EPS\",name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -3171,7 +3171,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_es_jvm_old_gc_time{epId=~\"$EPS\",name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
+          "expr": "flexibleengine_sys_es_jvm_old_gc_time{epId=~\"$EPS\",name=~\"$Cluster\",privateIp=~\"$privateIp\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -3240,7 +3240,7 @@
           ]
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "huaweicloud_epinfo",
+        "definition": "flexibleengine_epinfo",
         "hide": 0,
         "includeAll": true,
         "label": "企业项目",
@@ -3248,7 +3248,7 @@
         "name": "EPS",
         "options": [],
         "query": {
-          "query": "huaweicloud_epinfo",
+          "query": "flexibleengine_epinfo",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -3268,7 +3268,7 @@
           ]
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "label_values(huaweicloud_sys_es_cpu_usage{epId=~\"$EPS\"},name)",
+        "definition": "label_values(flexibleengine_sys_es_cpu_usage{epId=~\"$EPS\"},name)",
         "hide": 0,
         "includeAll": true,
         "label": "CSS集群名称",
@@ -3276,7 +3276,7 @@
         "name": "Cluster",
         "options": [],
         "query": {
-          "query": "label_values(huaweicloud_sys_es_cpu_usage{epId=~\"$EPS\"},name)",
+          "query": "label_values(flexibleengine_sys_es_cpu_usage{epId=~\"$EPS\"},name)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -3296,7 +3296,7 @@
           ]
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "label_values(huaweicloud_sys_es_cpu_usage{epId=~\"$EPS\",name=~\"$Cluster\"},privateIp)",
+        "definition": "label_values(flexibleengine_sys_es_cpu_usage{epId=~\"$EPS\",name=~\"$Cluster\"},privateIp)",
         "hide": 0,
         "includeAll": true,
         "label": "主机IP",
@@ -3304,7 +3304,7 @@
         "name": "privateIp",
         "options": [],
         "query": {
-          "query": "label_values(huaweicloud_sys_es_cpu_usage{epId=~\"$EPS\",name=~\"$Cluster\"},privateIp)",
+          "query": "label_values(flexibleengine_sys_es_cpu_usage{epId=~\"$EPS\",name=~\"$Cluster\"},privateIp)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -3324,7 +3324,7 @@
           ]
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "label_values(huaweicloud_sys_es_cpu_usage{epId=~\"$EPS\",name=~\"$Cluster\"},instanceName)",
+        "definition": "label_values(flexibleengine_sys_es_cpu_usage{epId=~\"$EPS\",name=~\"$Cluster\"},instanceName)",
         "hide": 0,
         "includeAll": true,
         "label": "实例名称",
@@ -3332,7 +3332,7 @@
         "name": "instanceName",
         "options": [],
         "query": {
-          "query": "label_values(huaweicloud_sys_es_cpu_usage{epId=~\"$EPS\",name=~\"$Cluster\"},instanceName)",
+          "query": "label_values(flexibleengine_sys_es_cpu_usage{epId=~\"$EPS\",name=~\"$Cluster\"},instanceName)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
@@ -3348,7 +3348,7 @@
           "value": "192"
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "query_result(count(huaweicloud_sys_es_cpu_usage{name=~\"$Cluster\"}))",
+        "definition": "query_result(count(flexibleengine_sys_es_cpu_usage{name=~\"$Cluster\"}))",
         "hide": 2,
         "includeAll": false,
         "label": "",
@@ -3356,7 +3356,7 @@
         "name": "total",
         "options": [],
         "query": {
-          "query": "query_result(count(huaweicloud_sys_es_cpu_usage{name=~\"$Cluster\"}))",
+          "query": "query_result(count(flexibleengine_sys_es_cpu_usage{name=~\"$Cluster\"}))",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,

@@ -9,7 +9,7 @@
       "pluginName": "prometheus"
     }
   ],
-  "description": "【华为云WAF监控指标说明】https://support.huaweicloud.com/usermanual-waf/waf_01_0372.html",
+  "description": "【华为云WAF监控指标说明】https://support.flexibleengine.com/usermanual-waf/waf_01_0372.html",
   "editable": true,
   "gnetId": 8919,
   "graphTooltip": 0,
@@ -122,7 +122,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_waf_requests{name=~\"$waf_name\"}",
+          "expr": "flexibleengine_sys_waf_requests{name=~\"$waf_name\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -239,7 +239,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_waf_inbound_traffic{name=~\"$waf_name\"}",
+          "expr": "flexibleengine_sys_waf_inbound_traffic{name=~\"$waf_name\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -252,7 +252,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_waf_outbound_traffic{name=~\"$waf_name\"}",
+          "expr": "0 - flexibleengine_sys_waf_outbound_traffic{name=~\"$waf_name\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -361,7 +361,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_waf_inbound_traffic_peak{waf_instance_id=~\"$waf_instance_id\"}",
+          "expr": "flexibleengine_sys_waf_inbound_traffic_peak{waf_instance_id=~\"$waf_instance_id\"}",
           "format": "time_series",
           "instant": false,
           "interval": "",
@@ -371,7 +371,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_waf_outbound_traffic_peak{waf_instance_id=~\"$waf_instance_id\"}",
+          "expr": "0 - flexibleengine_sys_waf_outbound_traffic_peak{waf_instance_id=~\"$waf_instance_id\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -382,7 +382,7 @@
         },
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_waf_inbound_traffic_mean{waf_instance_id=~\"$waf_instance_id\"}",
+          "expr": "flexibleengine_sys_waf_inbound_traffic_mean{waf_instance_id=~\"$waf_instance_id\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -393,7 +393,7 @@
         },
         {
           "exemplar": true,
-          "expr": "0 - huaweicloud_sys_waf_outbound_traffic_mean{waf_instance_id=~\"$waf_instance_id\"}",
+          "expr": "0 - flexibleengine_sys_waf_outbound_traffic_mean{waf_instance_id=~\"$waf_instance_id\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -521,7 +521,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_waf_waf_http_2xx{name=~\"$waf_name\"}",
+          "expr": "flexibleengine_sys_waf_waf_http_2xx{name=~\"$waf_name\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -651,7 +651,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_waf_waf_http_3xx{name=~\"$waf_name\"}",
+          "expr": "flexibleengine_sys_waf_waf_http_3xx{name=~\"$waf_name\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -781,7 +781,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_waf_waf_http_4xx{name=~\"$waf_name\"}",
+          "expr": "flexibleengine_sys_waf_waf_http_4xx{name=~\"$waf_name\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -911,7 +911,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_waf_waf_http_5xx{name=~\"$waf_name\"}",
+          "expr": "flexibleengine_sys_waf_waf_http_5xx{name=~\"$waf_name\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1039,7 +1039,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_waf_qps_peak{name=~\"$waf_name\"}",
+          "expr": "flexibleengine_sys_waf_qps_peak{name=~\"$waf_name\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1169,7 +1169,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "huaweicloud_sys_waf_qps_mean{name=~\"$waf_name\"}",
+          "expr": "flexibleengine_sys_waf_qps_mean{name=~\"$waf_name\"}",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -1242,7 +1242,7 @@
           ]
         },
         "datasource": "${prometheus-cloudeye-exporter}",
-        "definition": "label_values(huaweicloud_sys_waf_requests{},name)",
+        "definition": "label_values(flexibleengine_sys_waf_requests{},name)",
         "description": null,
         "error": null,
         "hide": 0,
@@ -1252,7 +1252,7 @@
         "name": "waf_name",
         "options": [],
         "query": {
-          "query": "label_values(huaweicloud_sys_waf_requests{},name)",
+          "query": "label_values(flexibleengine_sys_waf_requests{},name)",
           "refId": "StandardVariableQuery"
         },
         "refresh": 1,
