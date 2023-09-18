@@ -19,8 +19,8 @@ type EpsInfo struct {
 	TTL       int64
 }
 
-const HelpInfo = `# HELP huaweicloud_epinfo huaweicloud_epinfo
-# TYPE huaweicloud_epinfo gauge
+const HelpInfo = `# HELP flexibleengine_epinfo flexibleengine_epinfo
+# TYPE flexibleengine_epinfo gauge
 `
 
 func getEPSClient() *eps.EpsClient {
@@ -35,7 +35,7 @@ func GetEPSInfo() (string, error) {
 		return result, err
 	}
 	for _, detail := range epsInfo {
-		result += fmt.Sprintf("huaweicloud_epinfo{epId=\"%s\",epName=\"%s\"} 1\n", detail.Id, detail.Name)
+		result += fmt.Sprintf("flexibleengine_epinfo{epId=\"%s\",epName=\"%s\"} 1\n", detail.Id, detail.Name)
 	}
 	return result, nil
 }
