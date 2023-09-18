@@ -77,7 +77,7 @@ func SetDefaultConfigValues(config *CloudConfig) {
 	}
 
 	if config.Global.Prefix == "" {
-		config.Global.Prefix = "huaweicloud"
+		config.Global.Prefix = "flexibleengine"
 	}
 
 	if config.Global.MaxRoutines == 0 {
