@@ -53,7 +53,7 @@ var (
 	}
 )
 
-func (exporter *BaseHuaweiCloudExporter) listAllResources(namespace string) (map[string]labelInfo, []model.MetricInfoList) {
+func (exporter *BaseFlexibleEngineExporter) listAllResources(namespace string) (map[string]labelInfo, []model.MetricInfoList) {
 	serviceFunc, ok := serviceMap[namespace]
 	if !ok {
 		return map[string]labelInfo{}, []model.MetricInfoList{}

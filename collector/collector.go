@@ -15,7 +15,7 @@ import (
 	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 )
 
-type BaseHuaweiCloudExporter struct {
+type BaseFlexibleEngineExporter struct {
 	From            int64
 	To              int64
 	Namespaces      []string
@@ -34,8 +34,8 @@ func replaceName(name string) string {
 	return newName
 }
 
-func GetMonitoringCollector(namespaces []string) *BaseHuaweiCloudExporter {
-	exporter := &BaseHuaweiCloudExporter{
+func GetMonitoringCollector(namespaces []string) *BaseFlexibleEngineExporter {
+	exporter := &BaseFlexibleEngineExporter{
 		Namespaces:      namespaces,
 		Prefix:          CloudConf.Global.Prefix,
 		MaxRoutines:     CloudConf.Global.MaxRoutines,
@@ -46,11 +46,11 @@ func GetMonitoringCollector(namespaces []string) *BaseHuaweiCloudExporter {
 }
 
 // Describe simply sends the two Descs in the struct to the channel.
-func (exporter *BaseHuaweiCloudExporter) Describe(ch chan<- *prometheus.Desc) {
+func (exporter *BaseFlexibleEngineExporter) Describe(ch chan<- *prometheus.Desc) {
 	ch <- prometheus.NewDesc("dummy", "dummy", nil, nil)
 }
 
-func (exporter *BaseHuaweiCloudExporter) listMetrics(namespace string) ([]model.MetricInfoList, map[string]labelInfo) {
+func (exporter *BaseFlexibleEngineExporter) listMetrics(namespace string) ([]model.MetricInfoList, map[string]labelInfo) {
 	allResourcesInfo, metrics := exporter.listAllResources(namespace)
 	logs.Logger.Debugf("[%s] Resource number of %s: %d", exporter.txnKey, namespace, len(allResourcesInfo))
 
@@ -67,7 +67,7 @@ func (exporter *BaseHuaweiCloudExporter) listMetrics(namespace string) ([]model.
 	return allMetrics, allResourcesInfo
 }
 
-func (exporter *BaseHuaweiCloudExporter) setProData(ctx context.Context, ch chan<- prometheus.Metric,
+func (exporter *BaseFlexibleEngineExporter) setProData(ctx context.Context, ch chan<- prometheus.Metric,
 	dataList []model.BatchMetricData, allResourcesInfo map[string]labelInfo) {
 	defer func() {
 		if err := recover(); err != nil {
@@ -140,7 +140,7 @@ func isContainsInStringArr(target string, array []string) bool {
 	return false
 }
 
-func (exporter *BaseHuaweiCloudExporter) collectMetricByNamespace(ctx context.Context, ch chan<- prometheus.Metric, namespace string) {
+func (exporter *BaseFlexibleEngineExporter) collectMetricByNamespace(ctx context.Context, ch chan<- prometheus.Metric, namespace string) {
 	defer func() {
 		if err := recover(); err != nil {
 			logs.Logger.Errorf("[%s] recover error: %+v", exporter.txnKey, err)
@@ -199,7 +199,7 @@ func transMetric(metricInfoList model.MetricInfoList) model.MetricInfo {
 	}
 }
 
-func (exporter *BaseHuaweiCloudExporter) Collect(ch chan<- prometheus.Metric) {
+func (exporter *BaseFlexibleEngineExporter) Collect(ch chan<- prometheus.Metric) {
 	duration, err := time.ParseDuration("-10m")
 	if err != nil {
 		logs.Logger.Error("ParseDuration -10m error:", err.Error())
@@ -240,7 +240,7 @@ func sendMetricData(ctx context.Context, ch chan<- prometheus.Metric, metric pro
 	return nil
 }
 
-func (exporter *BaseHuaweiCloudExporter) debugMetricInfo(md model.BatchMetricData) {
+func (exporter *BaseFlexibleEngineExporter) debugMetricInfo(md model.BatchMetricData) {
 	dataJson, err := json.Marshal(md)
 	if err != nil {
 		logs.Logger.Errorf("[%s] Marshal metricData error: %s", exporter.txnKey, err.Error())
