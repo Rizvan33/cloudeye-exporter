@@ -157,7 +157,7 @@ func listBandwidthPackages() (map[string]model.BandwidthPackage, error) {
 }
 
 func getCCClient() *cc.CcClient {
-	return cc.NewCcClient(cc.CcClientBuilder().WithRegion(region.ValueOf("cn-north-4")).
+	return cc.NewCcClient(cc.CcClientBuilder().WithRegion(region.ValueOf("eu-west-0")).
 		WithCredential(global.NewCredentialsBuilder().WithAk(conf.AccessKey).WithSk(conf.SecretKey).Build()).Build())
 }
 

@@ -8,7 +8,7 @@ import (
 )
 
 func getRMSClient() *v1.RmsClient {
-	return v1.NewRmsClient(v1.RmsClientBuilder().WithRegion(region.ValueOf("cn-north-4")).
+	return v1.NewRmsClient(v1.RmsClientBuilder().WithRegion(region.ValueOf("eu-west-0")).
 		WithCredential(global.NewCredentialsBuilder().WithAk(conf.AccessKey).WithSk(conf.SecretKey).Build()).Build())
 }
 
