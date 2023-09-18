@@ -3,7 +3,7 @@ package collector
 import (
 	"time"
 
-	"github.com/huaweicloud/cloudeye-exporter/logs"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 	"github.com/huaweicloud/huaweicloud-sdk-go-v3/core/auth/basic"
 	"github.com/huaweicloud/huaweicloud-sdk-go-v3/core/config"
 	cbr "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/cbr/v1"

@@ -10,7 +10,7 @@ import (
 	nosql "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/gaussdbfornosql/v3"
 	nosqlmodel "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/gaussdbfornosql/v3/model"
 
-	"github.com/huaweicloud/cloudeye-exporter/logs"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 )
 
 var (

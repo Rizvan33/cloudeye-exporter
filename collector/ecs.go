@@ -10,7 +10,7 @@ import (
 	ecs "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/ecs/v2"
 	ecsmodel "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/ecs/v2/model"
 
-	"github.com/huaweicloud/cloudeye-exporter/logs"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 )
 
 var (

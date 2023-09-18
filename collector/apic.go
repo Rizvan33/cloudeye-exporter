@@ -4,7 +4,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/huaweicloud/cloudeye-exporter/logs"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 	"github.com/huaweicloud/huaweicloud-sdk-go-v3/core/auth/basic"
 	"github.com/huaweicloud/huaweicloud-sdk-go-v3/core/config"
 	apig "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/apig/v2"

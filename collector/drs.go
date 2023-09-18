@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/huaweicloud/cloudeye-exporter/logs"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 	"github.com/huaweicloud/huaweicloud-sdk-go-v3/services/ces/v1/model"
 	rmsmodel "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/rms/v1/model"
 )

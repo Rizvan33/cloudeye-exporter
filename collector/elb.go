@@ -11,7 +11,7 @@ import (
 	elb "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/elb/v3"
 	"github.com/huaweicloud/huaweicloud-sdk-go-v3/services/elb/v3/model"
 
-	"github.com/huaweicloud/cloudeye-exporter/logs"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 )
 
 var elbInfo serversInfo

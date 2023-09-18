@@ -10,8 +10,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"github.com/huaweicloud/cloudeye-exporter/collector"
-	"github.com/huaweicloud/cloudeye-exporter/logs"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/collector"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 )
 
 var (

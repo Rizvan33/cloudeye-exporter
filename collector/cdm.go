@@ -9,7 +9,7 @@ import (
 	"github.com/huaweicloud/huaweicloud-sdk-go-v3/services/cdm/v1/model"
 	cesmodel "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/ces/v1/model"
 
-	"github.com/huaweicloud/cloudeye-exporter/logs"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 )
 
 var cdmInfo serversInfo

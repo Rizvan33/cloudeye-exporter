@@ -11,7 +11,7 @@ import (
 	evs "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/evs/v2"
 	evsmodel "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/evs/v2/model"
 
-	"github.com/huaweicloud/cloudeye-exporter/logs"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 )
 
 type EvsInfo struct {

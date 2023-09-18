@@ -9,7 +9,7 @@ import (
 	ddm "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/ddm/v1"
 	ddmmodel "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/ddm/v1/model"
 
-	"github.com/huaweicloud/cloudeye-exporter/logs"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 )
 
 type DdmsInstanceInfo struct {

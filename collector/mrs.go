@@ -11,7 +11,7 @@ import (
 	mrs "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/mrs/v1"
 	mrsmodel "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/mrs/v1/model"
 
-	"github.com/huaweicloud/cloudeye-exporter/logs"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 )
 
 var mrsInfo serversInfo

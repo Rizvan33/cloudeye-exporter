@@ -9,7 +9,7 @@ import (
 	lakeformation "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/lakeformation/v1"
 	lakeformationmodel "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/lakeformation/v1/model"
 
-	"github.com/huaweicloud/cloudeye-exporter/logs"
+	"github.com/FlexibleEngineCloud/cloudeye-exporter/logs"
 )
 
 var lakeformationInfo serversInfo
