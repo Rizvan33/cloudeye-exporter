@@ -34,7 +34,7 @@ import (
 )
 
 const (
-	DefaultIamEndpoint         = "https://iam.myhuaweicloud.com"
+	DefaultIamEndpoint         = "https://iam.eu-west-0.prod-cloud-ocb.orange-business.com"
 	KeystoneListProjectsUri    = "/v3/projects"
 	KeystoneListAuthDomainsUri = "/v3/auth/domains"
 	IamEndpointEnv             = "HUAWEICLOUD_SDK_IAM_ENDPOINT"
