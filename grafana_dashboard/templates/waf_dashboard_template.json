@@ -39,7 +39,7 @@
       "id": 189,
       "panels": [],
       "repeat": "EPS",
-      "title": "资源明细：【$waf_name】",
+      "title": "Resource details：【$waf_name】",
       "type": "row"
     },
     {
@@ -51,12 +51,12 @@
         "iowait": "#EAB839",
         "irq": "#BF1B00",
         "nice": "#C15C17",
-        "sdb_每秒I/O操作%": "#d683ce",
+        "Resource sdb_I/O operations per second %": "#d683ce",
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
         "user": "#5195CE",
-        "磁盘花费在I/O操作占比": "#ba43a9"
+        "Disk spend on I/O operations": "#ba43a9"
       },
       "bars": false,
       "dashLength": 10,
@@ -128,7 +128,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-请求量",
+          "legendFormat": "{{name}}-Request_volume",
           "refId": "A",
           "step": 20
         }
@@ -137,7 +137,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "请求量",
+      "title": "Request volume",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -174,9 +174,9 @@
     },
     {
       "aliasColors": {
-        "15分钟": "#6ED0E0",
-        "1分钟": "#BF1B00",
-        "5分钟": "#CCA300"
+        "15 minutes": "#6ED0E0",
+        "1 minute": "#BF1B00",
+        "5 minutes": "#CCA300"
       },
       "bars": false,
       "dashLength": 10,
@@ -244,7 +244,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-入网总流量(5min)",
+          "legendFormat": "{{name}}-Total_inbound_traffic(5min)",
           "metric": "",
           "refId": "A",
           "step": 20,
@@ -258,7 +258,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-出网总流量(5min)",
+          "legendFormat": "{{name}}-Total_outbound_traffic(5min)",
           "metric": "",
           "refId": "B",
           "step": 20,
@@ -269,7 +269,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "入网总流量/出网总流量（5min）",
+      "title": "Total_incoming_network_traffic/total_outgoing_network_traffic(5min）",
       "tooltip": {
         "msResolution": false,
         "shared": true,
@@ -288,7 +288,7 @@
         {
           "$$hashKey": "object:136",
           "format": "mbytes",
-          "label": "入网总流量（+）/出网总流量（-）",
+          "label": "Total_inbound_traffic（+）/Total_outbound_traffic（-）",
           "logBase": 1,
           "show": true
         },
@@ -366,7 +366,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-入网流量的峰值(5min)",
+          "legendFormat": "{{name}}-The_peak_value_of_inbound_traffic(5min)",
           "refId": "A"
         },
         {
@@ -377,7 +377,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-出网流量的峰值(5min)",
+          "legendFormat": "{{name}}-Peak_value_of_outbound_traffic(5min)",
           "refId": "B"
         },
         {
@@ -388,7 +388,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-入网流量的均值(5min)",
+          "legendFormat": "{{name}}-Average_value_of_incoming_network_traffic(5min)",
           "refId": "C"
         },
         {
@@ -399,7 +399,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-出网流量的均值(5min)",
+          "legendFormat": "{{name}}-Average_outbound_traffic(5min)",
           "refId": "D"
         }
       ],
@@ -407,7 +407,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "入网流量/出网流量(均值+峰值)",
+      "title": "Incoming network traffic/outgoing network traffic (average value + peak value)",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -425,7 +425,7 @@
         {
           "$$hashKey": "object:227",
           "format": "Mibits",
-          "label": "入网流量（+）/出网流量（-）",
+          "label": "Inbound traffic (+)/Outbound traffic (-)",
           "logBase": 1,
           "show": true
         },
@@ -450,12 +450,12 @@
         "iowait": "#EAB839",
         "irq": "#BF1B00",
         "nice": "#C15C17",
-        "sdb_每秒I/O操作%": "#d683ce",
+        "sdb_I/O_operations_per_second_%": "#d683ce",
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
         "user": "#5195CE",
-        "磁盘花费在I/O操作占比": "#ba43a9"
+        "Disk_spend_on_I/O_operations": "#ba43a9"
       },
       "bars": false,
       "dashLength": 10,
@@ -527,7 +527,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-WAF返回码（2XX）",
+          "legendFormat": "{{name}}-WAF_return_code（2XX）",
           "refId": "A",
           "step": 20
         }
@@ -536,7 +536,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "WAF返回码2XX",
+      "title": "WAF_return_code 2XX",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -580,12 +580,12 @@
         "iowait": "#EAB839",
         "irq": "#BF1B00",
         "nice": "#C15C17",
-        "sdb_每秒I/O操作%": "#d683ce",
+        "sdb_I/O_operations_per_second_%": "#d683ce",
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
         "user": "#5195CE",
-        "磁盘花费在I/O操作占比": "#ba43a9"
+        "Disk_spend_on_I/O_operations": "#ba43a9"
       },
       "bars": false,
       "dashLength": 10,
@@ -657,7 +657,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-WAF返回码（3XX）",
+          "legendFormat": "{{name}}-WAF_return_code（3XX）",
           "refId": "A",
           "step": 20
         }
@@ -666,7 +666,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "WAF返回码3XX",
+      "title": "WAF_return_code3XX",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -710,12 +710,12 @@
         "iowait": "#EAB839",
         "irq": "#BF1B00",
         "nice": "#C15C17",
-        "sdb_每秒I/O操作%": "#d683ce",
+        "sdb_I/O_operations_per_second_%": "#d683ce",
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
         "user": "#5195CE",
-        "磁盘花费在I/O操作占比": "#ba43a9"
+        "Disk_spend_on_I/O_operations": "#ba43a9"
       },
       "bars": false,
       "dashLength": 10,
@@ -770,7 +770,7 @@
       "seriesOverrides": [
         {
           "$$hashKey": "object:1605",
-          "alias": "/.*总使用率/",
+          "alias": "/.*total_usage/",
           "color": "#C4162A",
           "fill": 0
         }
@@ -787,7 +787,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-WAF返回码（4XX）",
+          "legendFormat": "{{name}}-WAF_return_code（4XX）",
           "refId": "A",
           "step": 20
         }
@@ -796,7 +796,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "WAF返回码4XX",
+      "title": "WAF_return_code4XX",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -840,12 +840,12 @@
         "iowait": "#EAB839",
         "irq": "#BF1B00",
         "nice": "#C15C17",
-        "sdb_每秒I/O操作%": "#d683ce",
+        "sdb_I/O_operations_per_second_%": "#d683ce",
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
         "user": "#5195CE",
-        "磁盘花费在I/O操作占比": "#ba43a9"
+        "Disk_spend_on_I/O_operations": "#ba43a9"
       },
       "bars": false,
       "dashLength": 10,
@@ -917,7 +917,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-WAF返回码（5XX）",
+          "legendFormat": "{{name}}-WAF_return_code（5XX）",
           "refId": "A",
           "step": 20
         }
@@ -926,7 +926,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "WAF返回码5XX",
+      "title": "WAF_return_code5XX",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -963,15 +963,15 @@
     },
     {
       "aliasColors": {
-        "192.168.200.241:9100_总内存": "dark-red",
-        "使用率": "yellow",
-        "内存_Avaliable": "#6ED0E0",
-        "内存_Cached": "#EF843C",
-        "内存_Free": "#629E51",
-        "内存_Total": "#6d1f62",
-        "内存_Used": "#eab839",
-        "可用": "#9ac48a",
-        "总内存": "#bf1b00"
+        "192.168.200.241:9100_totalMemory": "dark-red",
+        "usageRate": "yellow",
+        "memory_Avaliable": "#6ED0E0",
+        "memory_Cached": "#EF843C",
+        "memory_Free": "#629E51",
+        "memory_Total": "#6d1f62",
+        "memory_Used": "#eab839",
+        "available": "#9ac48a",
+        "total_memory": "#bf1b00"
       },
       "bars": false,
       "dashLength": 10,
@@ -1025,7 +1025,7 @@
       "seriesOverrides": [
         {
           "$$hashKey": "object:154",
-          "alias": "使用率",
+          "alias": "usage_rate",
           "color": "rgb(0, 209, 255)",
           "lines": false,
           "pointradius": 1,
@@ -1045,7 +1045,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-QPS峰值",
+          "legendFormat": "{{name}}-QPS_peak",
           "refId": "A",
           "step": 4
         }
@@ -1054,7 +1054,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "QPS峰值",
+      "title": "QPS_peak",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -1093,15 +1093,15 @@
     },
     {
       "aliasColors": {
-        "192.168.200.241:9100_总内存": "dark-red",
-        "使用率": "yellow",
-        "内存_Avaliable": "#6ED0E0",
-        "内存_Cached": "#EF843C",
-        "内存_Free": "#629E51",
-        "内存_Total": "#6d1f62",
-        "内存_Used": "#eab839",
-        "可用": "#9ac48a",
-        "总内存": "#bf1b00"
+        "192.168.200.241:9100_total_memory": "dark-red",
+        "usaeRate": "yellow",
+        "memory_Avaliable": "#6ED0E0",
+        "memory_Cached": "#EF843C",
+        "memory_Free": "#629E51",
+        "memory_Total": "#6d1f62",
+        "memory_Used": "#eab839",
+        "available": "#9ac48a",
+        "totalMemory": "#bf1b00"
       },
       "bars": false,
       "dashLength": 10,
@@ -1155,7 +1155,7 @@
       "seriesOverrides": [
         {
           "$$hashKey": "object:154",
-          "alias": "使用率",
+          "alias": "usage_rate",
           "color": "rgb(0, 209, 255)",
           "lines": false,
           "pointradius": 1,
@@ -1175,7 +1175,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{name}}-QPS均值",
+          "legendFormat": "{{name}}-QPS_mean",
           "refId": "A",
           "step": 4
         }
@@ -1184,7 +1184,7 @@
       "timeFrom": null,
       "timeRegions": [],
       "timeShift": null,
-      "title": "QPS均值",
+      "title": "QPS mean",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -1247,7 +1247,7 @@
         "error": null,
         "hide": 0,
         "includeAll": true,
-        "label": "防护域名",
+        "label": "protect domain name",
         "multi": true,
         "name": "waf_name",
         "options": [],
@@ -1295,7 +1295,7 @@
     ]
   },
   "timezone": "browser",
-  "title": "Web应用防火墙(WAF)",
+  "title": "Web application firewall(WAF)",
   "uid": "9CWBz0bc3",
   "version": 4
 }
