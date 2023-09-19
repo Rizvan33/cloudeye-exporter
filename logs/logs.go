@@ -19,7 +19,7 @@ type LoggerConstructor struct {
 	LogInstance logger
 }
 
-// logger 接口
+// logger interface
 type logger interface {
 	Debug(args ...interface{})
 	Info(args ...interface{})
@@ -34,7 +34,7 @@ type logger interface {
 	Sync() error
 }
 
-// Config Zap日志配置项
+// Config Zap logging configuration
 type Config struct {
 	Level      zapcore.Level `yaml:"level"`
 	Type       string        `yaml:"type"`
@@ -135,7 +135,7 @@ func FlushLogAndExit(code int) {
 	os.Exit(code)
 }
 
-// zap取message方法
+// zap gets message method
 func getMessage(template string, fmtArgs []interface{}) string {
 	if len(fmtArgs) == 0 {
 		return template
@@ -154,7 +154,7 @@ func getMessage(template string, fmtArgs []interface{}) string {
 func clearLineBreaks(template string, args ...interface{}) string {
 	message := getMessage(template, args)
 	if message != "" {
-		// 清除message中的常见日志注入字符
+		// Clear common log injection characters in messages
 		message = strings.Replace(message, "\b", "", -1)
 		message = strings.Replace(message, "\n", "", -1)
 		message = strings.Replace(message, "\t", "", -1)
