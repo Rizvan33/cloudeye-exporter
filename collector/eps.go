@@ -24,7 +24,7 @@ const HelpInfo = `# HELP flexibleengine_epinfo flexibleengine_epinfo
 `
 
 func getEPSClient() *eps.EpsClient {
-	return eps.NewEpsClient(eps.EpsClientBuilder().WithRegion(region.ValueOf("eu-west-0")).
+	return eps.NewEpsClient(eps.EpsClientBuilder().WithRegion(region.ValueOf("cn-north-4")).
 		WithCredential(global.NewCredentialsBuilder().WithAk(conf.AccessKey).WithSk(conf.SecretKey).Build()).Build())
 }
 
