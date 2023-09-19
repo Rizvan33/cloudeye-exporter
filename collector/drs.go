@@ -72,7 +72,7 @@ func getAllDrsJobsFromRMS() ([]DrsInstanceInfo, error) {
 		var drsProperties map[string]string
 		err := fmtResourceProperties(resource.Properties, &drsProperties)
 		if err != nil {
-			// properties转化label失败，打印日志，继续增加其他字段
+			// The conversion of properties to labels failed, print a log, and continue adding other fields.
 			logs.Logger.Errorf("Failed to fmt drs properties, error: %s", err.Error())
 		}
 		drsJobs[index].ID = *resource.Id

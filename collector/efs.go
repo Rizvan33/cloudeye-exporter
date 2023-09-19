@@ -64,7 +64,7 @@ func getAllEfsShareFromRMS() ([]EfsInstanceInfo, error) {
 		var efsProperties map[string]string
 		err := fmtResourceProperties(resource.Properties, &efsProperties)
 		if err != nil {
-			// properties转化label失败，打印日志，继续增加其他字段
+			// The conversion from properties to labels failed, log the error, and continue adding other fields.
 			logs.Logger.Errorf("Failed to fmt efs properties, error: %s", err.Error())
 		}
 		shares[index].ID = *resource.Id

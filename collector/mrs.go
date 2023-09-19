@@ -112,7 +112,7 @@ func getClusterFromMRS() ([]ResourceBaseInfo, error) {
 	return instances, nil
 }
 
-// fmtMrsTags mrs的tags信息，返回的是“key5=value5,key1=value1”,需要转换成map
+// fmtMrsTags Mrs.'s tags information, returned as 'key5=value5,key1=value1', needs to be converted into a map.
 func fmtMrsTags(tagsInfo *string) map[string]string {
 	if tagsInfo == nil {
 		return nil

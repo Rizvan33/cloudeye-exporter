@@ -200,7 +200,7 @@ func getPoolsInfoMap() map[string]model.Pool {
 	return poolsMap
 }
 
-// 标签只允许大写字母，小写字母和下划线，过滤tags中有效的tag
+// Tags are only allowed to contain uppercase letters, lowercase letters, and underscores; filter out the valid tags from the tags.
 func getElbTags(tags []model.Tag) ([]string, []string) {
 	var keys, values []string
 	for _, tag := range tags {

@@ -63,7 +63,7 @@ func GetResourceKeyFromMetricInfo(metric model.MetricInfoList) string {
 }
 
 func GetResourceKeyFromMetricData(metric model.BatchMetricData) string {
-	// DMS实例其他维度不需要适配资源标签，只匹配实例信息
+	// For DMS instances, other dimensions do not need to be adapted to resource tags, only match instance information
 	if *metric.Namespace == "SYS.DMS" {
 		return getDmsResourceKey(metric)
 	}
@@ -114,7 +114,7 @@ func getEndpoint(server, version string) string {
 	return fmt.Sprintf("https://%s/%s", strings.Replace(host, "iam", server, 1), version)
 }
 
-// 标签只允许大写字母，小写字母和下划线，过滤tags中有效的tag
+// Tags are only allowed to contain uppercase letters, lowercase letters, and underscores; filter out valid tags from the tags.
 func getTags(tags map[string]string) ([]string, []string) {
 	var keys, values []string
 	for key, value := range tags {
