@@ -7,7 +7,6 @@ import (
 	"github.com/huaweicloud/huaweicloud-sdk-go-v3/core/auth/global"
 	eps "github.com/huaweicloud/huaweicloud-sdk-go-v3/services/eps/v1"
 	"github.com/huaweicloud/huaweicloud-sdk-go-v3/services/eps/v1/model"
-	"github.com/huaweicloud/huaweicloud-sdk-go-v3/services/eps/v1/region"
 )
 
 var epsInfo = &EpsInfo{
@@ -24,8 +23,8 @@ const HelpInfo = `# HELP flexibleengine_epinfo flexibleengine_epinfo
 `
 
 func getEPSClient() *eps.EpsClient {
-	return eps.NewEpsClient(eps.EpsClientBuilder().WithRegion(region.ValueOf("cn-north-4")).
-		WithCredential(global.NewCredentialsBuilder().WithAk(conf.AccessKey).WithSk(conf.SecretKey).Build()).Build())
+	return eps.NewEpsClient(eps.EpsClientBuilder().WithEndpoint(getEndpoint("eps", "")).
+		WithCredential(global.NewCredentialsBuilder().WithAk(conf.AccessKey).WithSk(conf.SecretKey).WithDomainId(conf.DomainID).Build()).Build())
 }
 
 func GetEPSInfo() (string, error) {
