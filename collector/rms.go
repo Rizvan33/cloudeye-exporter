@@ -4,12 +4,11 @@ import (
 	"github.com/huaweicloud/huaweicloud-sdk-go-v3/core/auth/global"
 	"github.com/huaweicloud/huaweicloud-sdk-go-v3/services/rms/v1"
 	"github.com/huaweicloud/huaweicloud-sdk-go-v3/services/rms/v1/model"
-	"github.com/huaweicloud/huaweicloud-sdk-go-v3/services/rms/v1/region"
 )
 
 func getRMSClient() *v1.RmsClient {
-	return v1.NewRmsClient(v1.RmsClientBuilder().WithRegion(region.ValueOf("cn-north-4")).
-		WithCredential(global.NewCredentialsBuilder().WithAk(conf.AccessKey).WithSk(conf.SecretKey).Build()).Build())
+	return v1.NewRmsClient(v1.RmsClientBuilder().WithEndpoint(getEndpoint("rms", "")).
+		WithCredential(global.NewCredentialsBuilder().WithAk(conf.AccessKey).WithSk(conf.SecretKey).WithDomainId(conf.DomainID).Build()).Build())
 }
 
 func listResources(provider, rourceType string) ([]model.ResourceEntity, error) {

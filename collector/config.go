@@ -60,6 +60,7 @@ func InitCloudConf(file string) error {
 		return err
 	}
 
+	initEndpointConfig()
 	return err
 }
 
@@ -174,6 +175,7 @@ func InitConfig() error {
 		conf.ProjectID = projects[0].Id
 		conf.DomainID = projects[0].DomainId
 	}
+
 	return nil
 }
 
@@ -190,4 +192,18 @@ func getProjectInfo() (*model.KeystoneListProjectsResponse, error) {
 				WithIgnoreSSLVerification(true)).
 			Build())
 	return iamclient.KeystoneListProjects(&model.KeystoneListProjectsRequest{Name: &conf.ProjectName})
+}
+
+var endpointConfig map[string]string
+
+func initEndpointConfig() {
+	context, err := ioutil.ReadFile("endpoints.yml")
+	if err != nil {
+		logs.Logger.Errorf("Init endpoint config error: &s", err.Error())
+		return
+	}
+	err = yaml.Unmarshal(context, &endpointConfig)
+	if err != nil {
+		logs.Logger.Errorf("Init endpoint config error: &s", err.Error())
+	}
 }
