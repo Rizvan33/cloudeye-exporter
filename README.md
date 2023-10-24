@@ -4,14 +4,40 @@ This document describe how to configure [Flexible Engine](https://cloud.orange-b
 
 ## Supported Services
 
-Cloud Eye exporter for Prometheus support the following services :
+Cloud Eye exporter supports the following services :
 
-- Elastic Cloud Server
-- Elastic LoadBalancer
-- Elastic IP
-- Elastic Volume Service
-- NAT Gateway
-- Relational Database Service
+- Elastic Cloud Server (ECS)
+- Elastic LoadBalancer (ELB)
+- Elastic IP (EIP)
+- Elastic Volume Service (EVS)
+- NAT Gateway (NATG)
+- Relational Database Service (RDS)
+- Distributed cache service (DCS)
+- Direct Connect service (DCAAS)
+- Virtual private cloud (VPC)
+- Auto scaling service (AS)
+- FunctionGraph service (FGS)
+- Data replication service (DRS)
+- Document database service (DDS)
+- API Gateway (APIG)
+- Cloud backup and recovery (CBR)
+- Web application firewall (WAF)
+- Data lake insight (DLI)
+- Scalable file service (SFS)
+- Cloud data migration (CDM)
+- Distributed Database Middleware (DDMS)
+- GaussDB service (GaussDB)
+- AntiDDOS (DDOS)
+- Data warehouse service (DWS)
+- VPN service (VPN)
+- Bare metal server (BMS)
+- VPCEndpoiint service (VPCEP)
+- ModelArts service (ModelArts)
+- Graph engine service (GES)
+- MapReduce service (MRS)
+- Data lake governance service DGC (DAYU)
+- Database security service (DBSS)
+
 
 ## Download
 
