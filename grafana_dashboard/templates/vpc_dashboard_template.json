@@ -23,7 +23,7 @@
       "tags": [],
       "targetBlank": true,
       "title": "GitHub",
-      "tooltip": "查看更多仪表板",
+      "tooltip": "View more dashboards",
       "type": "link",
       "url": "https://github.com/starsliao"
     },
@@ -50,7 +50,7 @@
       "id": 194,
       "panels": [],
       "repeat": "EPS",
-      "title": "带宽 资源总览（企业项目）企业项目：$EPS",
+      "title": "Aperçu des ressources en bande passante (projets d'entreprise) Projets d'entreprise：$EPS",
       "type": "row"
     },
     {
